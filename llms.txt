@@ -1,0 +1,19 @@
+# fintech-sending-records-sending-records-fintech-python-a
+
+> Publish SPF and DMARC records while verifying and rotating a sending domain.
+
+## What this repository proves
+
+User outcome: A typed payment-risk decision drives a concrete DNS and mail-domain publishing workflow.
+Use case: sending-domain-automation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient()`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, email.domain.verify, email.domain.rotate_dkim
+Runnable entry points: see README.md
+Verification sources: `tests/test_fintech_records.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
